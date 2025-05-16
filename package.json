@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev:client": "vite",
-    "dev:server": "tsx server/index.ts",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "server": "node server/index.js",
+  "build": "tsc && vite build",
+  "start": "npm run build && npm run server"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -44,6 +43,6 @@
     "@vitejs/plugin-react": "^4.4.1",
     "postcss-import": "^16.1.0",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+  "vite": "^6.3.5"
   }
 }

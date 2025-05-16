@@ -22,8 +22,7 @@ export default function WalletConnect() {
     try {
       setIsDisconnecting(true);
       await disconnectWallet();
-      // Clear the address logic should be handled in the WalletContext
-      // Reset the balance logic should be handled in the context if needed
+          // Reset the balance logic should be handled in the context if needed
     } catch (error) {
       console.error('Error disconnecting wallet:', error);
     } finally {
