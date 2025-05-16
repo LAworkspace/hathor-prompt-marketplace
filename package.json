@@ -1,0 +1,49 @@
+{
+  "name": "hathor-prompt-marketplace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "vite",
+    "dev:server": "tsx server/index.ts",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hathor/wallet-lib": "^2.3.1",
+    "@hookform/resolvers": "^5.0.1",
+    "@tanstack/react-query": "^5.76.1",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "http": "^0.0.1-security",
+    "lucide-react": "^0.511.0",
+    "next-themes": "^0.4.6",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.3",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^4.1.7",
+    "wouter": "^3.7.0",
+    "ws": "^8.18.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "postcss-import": "^16.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
